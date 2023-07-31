@@ -20,11 +20,7 @@ const numeros = []
 
 addElementosNoArray(numeros,200)
 
-const arrayDeNumerosPares = numeros.filter( valor => {
-    if(valor % 2 == 0){
-        return true
-    }
-})
+const arrayDeNumerosPares = numeros.filter( valor => valor % 2 == 0 )
 
 const arrayElevadoAoQuadrado = arrayDeNumerosPares.map(valor =>Math.pow(valor,2))
 
